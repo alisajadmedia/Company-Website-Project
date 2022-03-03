@@ -1,0 +1,476 @@
+/* Navbar */
+.navbar{
+    background-color: #032552; /* Primary-Color */
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    z-index: 999;
+    border-bottom: 1px solid #093a7a;
+}
+
+.logo{
+    margin-left: 30px;
+}
+
+.logo img{
+    width: 50px;
+}
+
+.desktop-logo{
+    display: none;
+}
+
+.navbar .flex{
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .container{
+    height: 100%;
+}
+
+.navbar ul{
+    display: flex;
+}
+
+.social-icons a{
+    display: none;
+}
+
+.navbar ul a{
+    color: white;
+    padding: 12px 20px;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.navbar ul a:hover{
+    color: #f9ae3a;
+}
+
+@media only screen and (min-width: 760px){
+    .desktop-logo{
+        display: block;
+    }
+
+    .desktop-logo img{
+        width: 130px;
+        margin-left: 20px;
+    }
+
+    .logo{
+        display: none;
+    }
+
+    .social-icons a{
+        display: inline-block;
+        font-size: px;
+    }
+
+    .social-icons a i{
+        font-size: 18px;
+    }
+
+}
+@media only screen and (min-width: 600px) and (max-width: 760px){
+    .navbar ul{
+        margin-right: -8em;
+    }
+}
+
+/* Hero Page */
+.hero-page{
+    background-image: linear-gradient(to bottom, rgba(0, 34, 185, 0.6),rgba(0, 4, 15, 0.6)) ,
+    url(../images/sean-pollock-PhYq704ffdA-unsplash.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.hero-page .container{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.title{
+    position: relative;
+    top: 14em;
+    padding: 0 40px;
+}
+
+.title h5{
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 200;
+    color: #ffffff;
+    letter-spacing: 12px;
+}
+
+.title h1{
+    font-size: 45px;
+    color: #f9ae3a;
+    font-weight: 400;
+    line-height: 1em;
+}
+
+.title p{
+    color: #94c0dd;
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight: 200;
+    line-height: 24px;
+}
+
+.title a{
+    padding: 5px 3px;
+    position: relative;
+    top: 20px;
+}
+
+@media only screen and (min-width: 760px){
+    .title h5{
+        font-size: 1.3em;
+        letter-spacing: 0.7em;
+    }
+
+    .title h1{
+        font-size: 5em;
+        max-width: 700px;
+    }
+
+    .title p{
+        font-size: 1em;
+        max-width: 500px;
+        margin-top: 15px;
+    }
+
+    .title a{
+        top: 30px;
+    }
+}
+
+/* About Us Section */
+.about-us{
+    background-color: #032552;
+    width: 100%;
+    height: auto;
+    padding: 50px 0px;
+}
+
+.about-us .container{
+    padding: 20px;
+    color: white;
+}
+
+.about-us h3{
+    color: #71afff;
+    position: relative;
+    top: 17px;
+}
+
+.about-us p{
+    padding-top: 20px;
+    line-height: 1.6em;
+    color: #6c88ad;
+    font-size: 15px;
+}
+
+.about-text a{
+    position: relative;
+    top: 15px;
+}
+
+.about-us .subhead::first-letter{
+    float: left;
+    font-size: 45px;
+    padding: 10px 6px 0px 0px;
+    font-family: serif;
+
+}
+
+.about-img{
+    margin-top: 50px;
+    width: 100%;
+}
+
+.about-img img{
+    width: 100%;
+    padding-bottom: 6px;
+}
+
+.about-img figcaption{
+    color: #4f72a0;
+    font-size: 14px;
+}
+
+@media only screen and (min-width: 900px){
+    .about-us .container{
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .about-us{
+        padding-top: 40px;
+        padding-bottom: 50px;
+    }
+
+    .about-text{
+        padding: 50px 20px 0px 0px;
+    }
+}
+
+/* Services */
+.services{
+    background-color: #021936;
+    width: 100%;
+    height: auto;
+    padding: 70px 0px;
+}
+
+.services h2{
+    padding: 10px 15px;
+    margin-left: 30px;
+}
+
+.services .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 40px;
+}
+
+.flex-item{
+    text-align: center;
+    padding: 40px 0px;
+}
+
+.flex-item i{
+    font-size: 5em;
+    padding-bottom: 40px;
+    color: #f9ae3a;
+}
+
+.flex-item .ser-icon{
+    color: white;
+    position: relative;
+    top: 15px;
+}
+
+.flex-item .ser-icon i{
+    color: white;
+    font-size: 15px;
+    padding: 0 0 0 10px;
+}
+
+.flex-item .ser-icon:hover{
+    border-bottom: 1px solid #f9ae3a;
+}
+
+.flex-item h2{
+    color: #115fc5;
+}
+
+.flex-item p{
+    max-width: 250px;
+    margin: 0 auto;
+    margin-top: 5px;
+    color: #144688;
+    font-size: 15px;
+}
+
+@media only screen and (min-width: 700px){
+    .services .container{
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+        margin-top: -20px;
+    }
+
+    .flex-item p{
+        max-width: 300px;
+    }
+}
+
+/* Prices Section */
+.prices{
+    background-color: #032552;
+    width: 100%;
+    height: auto;
+    padding: 50px 0px;
+}
+
+.prices .subtitle{
+    margin: 0 0 0 30px;
+}
+
+.prices .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 2em;
+    padding: 60px 0px 0px 0px;
+}
+
+.price-item{
+    background-color: #093a7a;
+    border-radius: 1.5em;
+    border: 1px solid #f9ae3a;
+    padding: 0 3em;
+    box-shadow: 0px 10px 20px #011630;
+}
+
+.price-item .btn-primary{
+    display: block;
+    margin: 20px auto;
+}
+
+#price-pro{
+    background-color: #f9ae3a;
+}
+
+.price-h{
+    background-color: #006eff;
+    text-align: center;
+    padding: 11px;
+    font-size: 17px;
+    font-weight: bold;
+    border-radius: 0 0 20px 20px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.price-item h1{
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    padding: 20px 0px;
+}
+
+.price-item h2{
+    color: #57caff;
+    font-weight: 200;
+    padding-bottom: 15px;
+}
+
+.price-item h3{
+    font-size: 16px;
+    font-weight: 200;
+    color: #4a92f1;
+    padding-bottom: 15px
+}
+
+@media only screen and (min-width: 820px){
+    .prices .container{
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .price-item{
+        padding: 0 2em;
+    }
+}
+
+@media only screen and (min-width: 1000px){
+
+    .price-item{
+        padding: 0 4em;
+    }
+}
+
+/* Contact Section */
+.contact{
+    background-color: #021936;
+    width: 100%;
+    height: auto;
+}
+
+.contact .container{
+    padding: 60px 70px;
+}
+
+.contact h1{
+    color: #006eff;
+    border-bottom: 1px solid #f9ae3a;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.contact h2{
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 5px 0px;
+}
+
+@media only screen and (min-width: 1000px){
+    .contact .container{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .contact h1{
+        border-right: 1px solid #f9ae3a;
+        border-bottom: 0;
+        padding: 0 10px;
+    }
+}
+
+footer{
+    background-color: #000f24;
+    padding: 40px 0 0 0;
+}
+
+footer .container{
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+}
+
+footer img{
+    width: 200px;
+    margin: 0 auto;
+    display: block;
+    padding: 15px 0;
+}
+
+.quick-links{
+    margin-top: 50px;
+}
+
+footer h2{
+    color: #3683e7;
+    font-size: 20px;
+    border-left: 5px solid #f9ae3a;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+}
+
+footer ul li{
+    padding: 5px 0;
+}
+
+footer ul li a{
+    color: #093977;
+}
+
+footer p{
+    color: #174888;
+    padding: 30px 0;
+    font-size: 13px;
+    text-align: center;
+}
+
+@media only screen and (min-width: 760px){
+    footer img{
+        padding: 0;
+        margin: 0;
+    }
+
+    .quick-links{
+        margin: 0;
+    }
+}
